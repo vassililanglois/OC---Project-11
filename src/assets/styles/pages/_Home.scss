@@ -1,1 +1,18 @@
+.home {
+  @include flex-center;
+  flex-direction: column;
+  width: 100%;
+  gap: 50px;
 
+  .locations-container {
+    background-color: $tertiary-color;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 3fr));
+    row-gap: 50px;
+    column-gap: 60px;
+    border-radius: 25px;
+    max-width: 1240px;
+    width: 100%;
+    padding: 56px 50px;
+  }
+}

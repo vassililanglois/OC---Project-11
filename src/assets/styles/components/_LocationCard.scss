@@ -1,0 +1,23 @@
+.location-card {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  height: 340px;
+  width: 340px;
+  border-radius: 10px;
+
+  display: flex;
+  align-items: flex-end;
+  padding: 20px;
+  transition: 200ms ease;
+
+  h2 {
+    font-size: 1.125rem;
+    color: white;
+  }
+
+  &:hover {
+    transform: scale(1.02);
+  }
+}

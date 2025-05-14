@@ -15,7 +15,12 @@
 @import "./components/Navbar";
 @import "./components/Footer";
 @import "./components/Banner";
+@import "./components/LocationCard";
+@import "./components/Collapse";
+@import "./components/Slideshow";
 
 // Styles des pages
 @import "./pages/Home";
+@import "./pages/Location";
 @import "./pages/About";
+@import "./pages/NotFound";

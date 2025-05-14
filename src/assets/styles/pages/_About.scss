@@ -1,0 +1,23 @@
+.about {
+  @include flex-center;
+  flex-direction: column;
+  gap: 38px;
+  width: 100%;
+  .banner-about {
+    width: 100%;
+    max-width: 1240px;
+    height: 223px;
+    background-image: url("src/assets/about_bg.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 25px;
+  }
+  .collapse-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+  }
+}

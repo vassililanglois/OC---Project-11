@@ -16,6 +16,16 @@ export const getLocationById = (id) => {
 };
 
 /**
+ * Récupère les images d'un logement par son ID.
+ * @param {string} id - L'ID du logement.
+ * @returns {Array|null} Liste des images correspondant à un logement ou null si l'ID n'existe pas.
+ */
+export const getPicturesById = (id) => {
+  const location = locations.find((location) => location.id === id);
+  return location ? location.pictures : null;
+};
+
+/**
  * Filtre les logements par tag.
  * @param {string} tag - Le tag à rechercher.
  * @returns {Array} Liste des logements correspondant au tag.

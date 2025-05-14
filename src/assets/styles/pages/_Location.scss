@@ -1,0 +1,84 @@
+.location {
+  @include flex-center;
+  width: 100%;
+  flex-direction: column;
+
+  .infos {
+    width: 100%;
+    max-width: 1240px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    .location-infos {
+      width: 100%;
+      max-width: 1240px;
+      display: flex;
+      flex-direction: column;
+
+      h1 {
+        color: $primary-color;
+        font-weight: 500;
+        font-size: 36px;
+      }
+      h2 {
+        font-weight: 500;
+        font-size: 18px;
+      }
+
+      .location-tags {
+        margin-top: 20px;
+        display: flex;
+        gap: 10px;
+        .location-tag {
+          @include flex-center;
+          min-width: 115px;
+          padding: 0 10px;
+          height: 25px;
+          font-size: 14px;
+          font-weight: 600;
+          background-color: $primary-color;
+          color: white;
+          border-radius: 10px;
+        }
+      }
+    }
+
+    .profile-infos {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+      .profile-view {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+
+        p {
+          font-weight: 400;
+          font-size: 18px;
+          text-align: end;
+          color: $primary-color;
+        }
+
+        img {
+          width: 64px;
+          height: 64px;
+          object-fit: cover;
+          border-radius: 50%;
+        }
+      }
+
+      .profile-rating {
+        display: flex;
+        width: 100%;
+      }
+    }
+  }
+
+  .location-collapses {
+    display: flex;
+    width: 100%;
+    max-width: 1240px;
+    gap: 76px;
+  }
+}
