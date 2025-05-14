@@ -1,0 +1,21 @@
+// Variables globales
+@import "./_variables";
+
+// Mixins
+@import "./_mixins";
+
+// Styles de base
+@import "./_base";
+
+// Classes utilitaires
+@import "./_utilities";
+
+// Styles des composants
+@import "./components/App";
+@import "./components/Navbar";
+@import "./components/Footer";
+@import "./components/Banner";
+
+// Styles des pages
+@import "./pages/Home";
+@import "./pages/About";
