@@ -2,13 +2,14 @@
   @include flex-center;
   width: 100%;
   flex-direction: column;
+  padding: 1rem 20px;
 
   .infos {
     width: 100%;
     max-width: 1240px;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 20px;
+    margin: 20px 0;
     .location-infos {
       width: 100%;
       max-width: 1240px;
@@ -45,6 +46,7 @@
 
     .profile-infos {
       display: flex;
+      align-items: center;
       flex-direction: column;
       gap: 20px;
 
@@ -80,5 +82,76 @@
     width: 100%;
     max-width: 1240px;
     gap: 76px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .location {
+    .infos {
+      flex-wrap: wrap;
+
+      .profile-infos {
+        flex-direction: row-reverse;
+        width: 100%;
+      }
+    }
+    .location-collapses {
+      flex-direction: column;
+      gap: 20px;
+
+      .collapse-header {
+        height: 30px;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .location {
+    .infos {
+      .location-infos {
+        gap: 5px;
+        h1 {
+          font-size: 18px;
+        }
+
+        h2 {
+          font-size: 14px;
+        }
+
+        .location-tags {
+          margin-top: 0;
+          .location-tag {
+            min-width: 84px;
+            font-size: 10px;
+            height: 18px;
+            padding: 0 5px;
+          }
+        }
+      }
+
+      .profile-infos {
+        margin-top: 20px;
+        .profile-view {
+          gap: 10px;
+          p {
+            font-size: 12px;
+          }
+
+          img {
+            width: 32px;
+            height: 32px;
+          }
+        }
+
+        .profile-rating {
+          display: flex;
+          width: 100%;
+          svg {
+            width: 24px;
+          }
+        }
+      }
+    }
   }
 }

@@ -60,3 +60,38 @@
     padding: 20px 20px;
   }
 }
+
+@media (max-width: 768px) {
+  .about-collapse,
+  .location-collapse {
+    max-height: 30px;
+
+    .collapse-header {
+      padding: 0 10px;
+      height: 30px;
+      h1 {
+        font-size: 13px;
+      }
+
+      .arrow {
+        width: 1.5rem;
+      }
+    }
+
+    .collapse-content {
+      padding: 10px 15px;
+
+      p {
+        font-size: 12px;
+      }
+
+      ul {
+        font-size: 12px;
+      }
+
+      div {
+        font-size: 12px;
+      }
+    }
+  }
+}

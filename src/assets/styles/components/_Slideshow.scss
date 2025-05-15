@@ -3,7 +3,6 @@
   width: 100%;
   max-width: 1240px;
   height: 415px;
-  margin-bottom: 20px;
 
   img {
     width: 100%;
@@ -36,5 +35,23 @@
     color: white;
     margin-bottom: 20px;
     letter-spacing: -1px;
+  }
+}
+
+@media (max-width: 768px) {
+  .slideshow {
+    height: 255px;
+
+    img {
+      border-radius: 10px;
+    }
+
+    .slideshow-arrow {
+      width: 2rem;
+    }
+
+    .slideshow-counter {
+      display: none;
+    }
   }
 }

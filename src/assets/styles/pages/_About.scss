@@ -3,6 +3,7 @@
   flex-direction: column;
   gap: 38px;
   width: 100%;
+  padding: 1rem 20px;
   .banner-about {
     width: 100%;
     max-width: 1240px;
@@ -19,5 +20,17 @@
     align-items: center;
     gap: 30px;
     width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .about {
+    gap: 20px;
+    .banner-about {
+      height: 111px;
+    }
+    .collapse-section {
+      gap: 20px;
+    }
   }
 }

@@ -3,6 +3,7 @@
   flex-direction: column;
   width: 100%;
   gap: 50px;
+  padding: 0 20px;
 
   .locations-container {
     background-color: $tertiary-color;
@@ -14,5 +15,17 @@
     max-width: 1240px;
     width: 100%;
     padding: 56px 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .home {
+    gap: 22px;
+    .locations-container {
+      background-color: white;
+      row-gap: 22px;
+      padding: 0;
+      margin-bottom: 22px;
+    }
   }
 }
