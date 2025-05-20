@@ -1,7 +1,7 @@
 import { useParams, useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { getLocationById } from "../data/locations";
-import LocationCollapse from "./LocationCollapse";
+import Collapse from "./Collapse";
 import Slideshow from "./Slideshow";
 
 function Location() {
@@ -64,8 +64,12 @@ function Location() {
       </div>
 
       <div className="location-collapses">
-        <LocationCollapse title="Description" text={location.description} />
-        <LocationCollapse
+        <Collapse
+          title="Description"
+          text={location.description}
+          type="location"
+        />
+        <Collapse
           title="Équipements"
           text={
             <ul>
@@ -74,6 +78,7 @@ function Location() {
               ))}
             </ul>
           }
+          type="location"
         />
       </div>
     </div>

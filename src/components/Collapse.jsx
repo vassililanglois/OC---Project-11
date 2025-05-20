@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-function LocationCollapse({ title, text }) {
+function Collapse({ title, text, type }) {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleCollapse = () => {
@@ -8,7 +8,7 @@ function LocationCollapse({ title, text }) {
   };
 
   return (
-    <div className={`location-collapse collapse ${isOpen ? "open" : ""}`}>
+    <div className={`${type}-collapse collapse ${isOpen ? "open" : ""}`}>
       <div className="collapse-header">
         <h1>{title}</h1>
         <svg
@@ -30,4 +30,4 @@ function LocationCollapse({ title, text }) {
   );
 }
 
-export default LocationCollapse;
+export default Collapse;
