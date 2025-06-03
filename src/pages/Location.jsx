@@ -13,7 +13,7 @@ function Location() {
     const foundLocation = getLocationById(id);
     if (!foundLocation) {
       // Redirection vers la page NotFound si l'ID est incorrect
-      navigate("/notfound", { replace: true });
+      navigate("/404", { replace: true });
     } else {
       setLocation(foundLocation);
     }
