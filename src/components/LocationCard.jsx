@@ -7,9 +7,6 @@ export default function LocationCard({ id, cover, title }) {
       className="location-card"
       style={{
         backgroundImage: `linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6)), url(${cover})`,
-        display: "block", // pour que le lien occupe toute la zone
-        color: "inherit",
-        textDecoration: "none",
       }}
       aria-label={`Voir la location ${title}`}
     >
