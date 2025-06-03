@@ -1,8 +1,8 @@
 import { useParams, useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { getLocationById } from "../data/locations";
-import Collapse from "./Collapse";
-import Slideshow from "./Slideshow";
+import Collapse from "../components/Collapse";
+import Slideshow from "../components/Slideshow";
 
 function Location() {
   const { id } = useParams();

@@ -4,7 +4,7 @@ function Navbar() {
   return (
     <div className="navbar">
       <Link to="/">
-        <img src="src/assets/logo.png" alt="Logo du site Kasa" />
+        <img src="src/assets/images/logo.png" alt="Logo du site Kasa" />
       </Link>
 
       <nav>

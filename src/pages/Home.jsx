@@ -1,5 +1,5 @@
-import Banner from "./Banner";
-import LocationCard from "./LocationCard";
+import Banner from "../components/Banner";
+import LocationCard from "../components/LocationCard";
 import { getAllLocations } from "../data/locations";
 
 function Home() {

@@ -2,13 +2,13 @@
   background-color: $tertiary-color;
   border-radius: 5px;
   max-width: 1023px;
+  height: 100%;
   max-height: 60px;
   overflow: hidden;
   width: 100%;
-  transition: max-height 0.3s ease;
 
   &.open {
-    max-height: 100%;
+    max-height: 1000px;
   }
 
   .collapse-header {
