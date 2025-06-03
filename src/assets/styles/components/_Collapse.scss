@@ -6,6 +6,7 @@
   max-height: 60px;
   overflow: hidden;
   width: 100%;
+  transition: max-height 0.5s ease;
 
   &.open {
     max-height: 1000px;
@@ -65,10 +66,9 @@
   .about-collapse,
   .location-collapse {
     max-height: 30px;
-
     .collapse-header {
       padding: 0 10px;
-      height: 30px;
+      max-height: 30px;
       h1 {
         font-size: 13px;
       }
