@@ -1,22 +1,19 @@
-import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
-function LocationCard({ id, cover, title }) {
-  const navigate = useNavigate();
-
-  const handleClick = () => {
-    navigate(`/${id}`); // Redirige vers la page avec l'ID
-  };
+export default function LocationCard({ id, cover, title }) {
   return (
-    <div
+    <Link
+      to={`/${id}`}
       className="location-card"
       style={{
         backgroundImage: `linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6)), url(${cover})`,
+        display: "block", // pour que le lien occupe toute la zone
+        color: "inherit",
+        textDecoration: "none",
       }}
-      onClick={handleClick}
+      aria-label={`Voir la location ${title}`}
     >
       <h2>{title}</h2>
-    </div>
+    </Link>
   );
 }
-
-export default LocationCard;
