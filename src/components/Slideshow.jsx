@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useParams } from "react-router-dom";
-import { getPicturesById } from "../data/locations"; // adapte le chemin si besoin
+import { getPicturesById } from "../data/locations";
 
 function Slideshow() {
   const { id } = useParams();
