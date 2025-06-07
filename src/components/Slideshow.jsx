@@ -4,7 +4,9 @@ import { getPicturesById } from "../data/locations";
 
 function Slideshow() {
   const { id } = useParams();
+
   const pictures = getPicturesById(id);
+
   const [index, setIndex] = useState(0);
 
   if (!pictures || pictures.length === 0)

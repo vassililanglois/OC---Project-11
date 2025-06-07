@@ -12,14 +12,12 @@ function Location() {
   useEffect(() => {
     const foundLocation = getLocationById(id);
     if (!foundLocation) {
-      // Redirection vers la page NotFound si l'ID est incorrect
       navigate("/404", { replace: true });
     } else {
       setLocation(foundLocation);
     }
   }, [id, navigate]);
 
-  // Si location est null (avant la redirection), on retourne rien ou un loading
   if (!location) return null;
 
   return (

@@ -24,12 +24,3 @@ export const getPicturesById = (id) => {
   const location = locations.find((location) => location.id === id);
   return location ? location.pictures : null;
 };
-
-/**
- * Filtre les logements par tag.
- * @param {string} tag - Le tag à rechercher.
- * @returns {Array} Liste des logements correspondant au tag.
- */
-export const filterLocationsByTag = (tag) => {
-  return locations.filter((location) => location.tags.includes(tag));
-};
